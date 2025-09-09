@@ -1,22 +1,118 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Student Welcome</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>charity: water</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #ffd700;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: #000;
+    }
+
+    .hero {
+      background-image: url('https://via.placeholder.com/1200x600');
+      background-size: cover;
+      background-position: center;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .hero h2 {
+      font-size: 2em;
+      max-width: 700px;
+    }
+
+    .content {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .content p {
+      font-size: 1.2em;
+      max-width: 800px;
+      margin: 0 auto 30px;
+    }
+
+    .cta-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .cta-buttons a {
+      background-color: #00aaff;
+      color: white;
+      padding: 15px 30px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-buttons a:hover {
+      background-color: #0077cc;
+    }
+
+    .footer {
+      background-color: #222;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+
+    .personal-touch {
+      font-style: italic;
+      margin-top: 20px;
+      color: #555;
+    }
+  </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Welcome, Student!</h1>
-    <form id="nameForm">
-      <input type="text" id="studentName" placeholder="Lizbeth Macias-S." required>
-      <button type="submit">Continue</button>
-    </form>
-    <div id="greeting" class="hidden"></div>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
-  <script src="script.js"></script>
+
+  <header>
+    <h1>charity: water</h1>
+  </header>
+
+  <section class="hero">
+    <h2>Support clean water, witness the results</h2>
+  </section>
+
+  <section class="content">
+    <p>Empower communities with clean water and see exactly how your support leaves lasting, driven-proven results.</p>
+    <div class="cta-buttons">
+      <a href="#donate">Donate Today</a>
+      <a href="#donate">Donate</a>
+    </div>
+    <div class="personal-touch">HELLO IT’S BRI</div>
+  </section>
+
+  <footer class="footer">
+    &copy; 2025 charity: water. All rights reserved.
+  </footer>
+
 </body>
 </html>
